@@ -246,4 +246,4 @@ set guifont=Menlo\ Regular\ for\ Powerline\:h14
 
 let g:Powerline_symbols = 'fancy'
 
-let g:fugitive_github_domains = ['https://github.com','code.livingsocial.net']
+let g:fugitive_github_domains = ['https://github.com']
