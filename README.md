@@ -10,15 +10,33 @@
 
 # Usage
 
-* Clone this repo `~/dotfiles`
+## Configuration
+
+Environment specific settings are found in `config.yml`.
+
+* `private_dir` - the directory containing files local to your system. For example, I include a `zshrc.private` 
+file in my zshrc config to store private information. 
+* `backup_dir` - The directory where your existing dotfiles are stored.
+* `files` - The dotfiles to copy
+* `private_files` - The private dotfiles to copy
+* `plugins` - The list of vim plugins
+
+## Installing
+
+```
+git clone git@github.com:austenito/dotfiles.git
+cd dotfiles
+rake install
+```
+
+## Tasks
 * `rake install` - This tasks creates a backup of your files in `~/dotfiles_bak`
 * `rake update_vim_plugins` - Updates all vim plugins
 
-## Private zshrc variables
+# Contribution
 
-My current zshrc includes a `~/.zshrc.private` file, which is linked at the bottom of the `zshrc` file. This is where
-private variables and tokens can live. The script expects private files to be in `~/dotfiles_private` directory.
-
-
-
-
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
