@@ -13,7 +13,7 @@ backup_dir = config["backup_dir"]
 vim_bundle_dir = "vim/bundle"
 
 desc "Backup existing dotfiles"
-task :backup do 
+task :backup do
   unique_backup_dir = "#{backup_dir}/#{Time.now.to_i}"
   puts "Creating #{unique_backup_dir} for backup of any existing dotfiles in #{home_dir} ..."
   FileUtils.makedirs(unique_backup_dir)
@@ -26,7 +26,7 @@ task :backup do
   end
 end
 
-task :link_public do 
+task :link_public do
   Dir.chdir home_dir
   config["files"].each do |file|
     file_name = ".#{file}"
@@ -35,13 +35,13 @@ task :link_public do
   end
 end
 
-task :link_private do 
+task :link_private do
   Dir.chdir home_dir
   config["private_files"].each do |file|
     if File.exists?("#{private_dir}/#{file}")
       file_name = ".#{file}"
       puts "Creating symlink to #{file_name} in home directory."
-      FileUtils.symlink "#{dotfiles_dir}/#{file}", ".#{file}", :force => true
+      FileUtils.symlink "#{private_dir}/#{file}", file_name, :force => true
     end
   end
 end
@@ -54,8 +54,10 @@ task :install_vim_plugins do
 
   config["plugins"].each_pair do |name, repo|
     vim_plugin_dir = "#{dotfiles_bundle_dir}/#{name}"
-    puts "Installing vim plugin: #{name}" 
-    Open3.popen3("git clone #{repo} #{vim_plugin_dir}")
+    Open3.popen3("git clone #{repo} #{vim_plugin_dir}") do |stdin, stdout, stderr, wait_thr|
+      puts "Installed vim plugin: #{name}" if wait_thr.value == 0
+      puts "Failed to install vim plugin: #{name}" if wait_thr.value != 0
+    end
   end
 end
 
@@ -63,7 +65,7 @@ desc "Update existing vim plugins"
 task :update_vim_plugins do
   config["plugins"].each_pair do |name, repo|
     Dir.chdir "#{vim_bundle_dir}/#{name}"
-    puts "Updating #{repo}" 
+    puts "Updating #{repo}"
     `git pull`
   end
 end
