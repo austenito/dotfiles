@@ -5,23 +5,22 @@ require 'open3'
 
 task :default => :install
 
+config = YAML.load_file("config.yml")
 home_dir = Dir.home
-dotfiles_dir = "#{home_dir}/dotfiles"                    # dotfiles directory
-private_dir = "#{home_dir}/dotfiles_private"    # dotfiles private directory
-backup_dir = "#{home_dir}/dotfiles_bak"         # old dotfiles backup directory
-#files="bashrc vimrc vim zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
-files = %w{ zshrc vimrc vim }    # list of files/folders to symlink in homedir
-private_files = %w{ zshrc.private }
+dotfiles_dir = Dir.pwd
+private_dir = config["private_dir"]
+backup_dir = config["backup_dir"]
 vim_bundle_dir = "vim/bundle"
 
+desc "Backup existing dotfiles"
 task :backup do 
   unique_backup_dir = "#{backup_dir}/#{Time.now.to_i}"
   puts "Creating #{unique_backup_dir} for backup of any existing dotfiles in #{home_dir} ..."
-  FileUtils.makedirs(unique_backup_dir) unless File.exists?(backup_dir)
+  FileUtils.makedirs(unique_backup_dir)
 
   puts "Moving any existing dotfiles from #{home_dir} to #{unique_backup_dir}"
   Dir.chdir home_dir
-  files.each do |file|
+  config["files"].each do |file|
     file_name = ".#{file}"
     FileUtils.mv(file_name, "#{unique_backup_dir}/#{file}", :force => true) if File.exists?(file_name)
   end
@@ -29,7 +28,7 @@ end
 
 task :link_public do 
   Dir.chdir home_dir
-  files.each do |file|
+  config["files"].each do |file|
     file_name = ".#{file}"
     puts "Creating symlink to #{file_name} in home directory."
     FileUtils.symlink "#{dotfiles_dir}/#{file}", file_name, :force => true
@@ -38,7 +37,7 @@ end
 
 task :link_private do 
   Dir.chdir home_dir
-  private_files.each do |file|
+  config["private_files"].each do |file|
     if File.exists?("#{private_dir}/#{file}")
       file_name = ".#{file}"
       puts "Creating symlink to #{file_name} in home directory."
@@ -61,6 +60,7 @@ task :install_vim_plugins do
   end
 end
 
+desc "Update existing vim plugins"
 task :update_vim_plugins do
   plugins = YAML.load_file("#{dotfiles_dir}/vim_plugins.yml")["plugins"]
   plugins.each_pair do |name, repo|
@@ -70,4 +70,5 @@ task :update_vim_plugins do
   end
 end
 
+desc "Installs dotfiles"
 task :install => [:backup, :install_vim_plugins, :link_public, :link_private]
