@@ -1,0 +1,27 @@
+plugins:
+  autoload: git://github.com/paulnicholson/vim-pathogen.git
+  gist: git://github.com/mattn/gist-vim.git
+  surround: git://github.com/tpope/vim-surround.git
+  markdown: git://github.com/tpope/vim-markdown.git
+  vim_rails: https://github.com/tpope/vim-rails.git
+  snipmate: https://github.com/msanders/snipmate.vim.git
+  bufexplorer: https://github.com/corntrace/bufexplorer.git
+  supertab: https://github.com/ervandew/supertab.git
+  supercomplete: https://github.com/vim-scripts/SearchComplete.git
+  nerdtree: https://github.com/scrooloose/nerdtree.git
+  nerdcommenter: https://github.com/scrooloose/nerdcommenter.git
+  markdown: https://github.com/nelstrom/vim-markdown-preview.git
+  delimit_mate: https://github.com/Raimondi/delimitMate.git
+  nerdtree: https://github.com/scrooloose/nerdtree.git
+  fugitive: https://github.com/tpope/vim-fugitive.git
+  ack: https://github.com/mileszs/ack.vim.git
+  slim: git@github.com:slim-template/vim-slim.git
+  coffee: https://github.com/kchmck/vim-coffee-script.git
+  unimpaired: https://github.com/tpope/vim-unimpaired.git
+  less: https://github.com/groenewege/vim-less.git
+  endwise: https://github.com/tpope/vim-endwise.git
+  mustache: https://github.com/juvenn/mustache.vim.git
+  instant_markdown: git://github.com/suan/vim-instant-markdown.git
+  ruby: git://github.com/vim-ruby/vim-ruby.git
+  powerline: git@github.com:Lokaltog/vim-powerline.git
+  ctrlp: git@github.com:kien/ctrlp.vim.git
