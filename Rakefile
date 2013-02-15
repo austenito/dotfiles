@@ -52,8 +52,7 @@ task :install_vim_plugins do
   Dir.mkdir(dotfiles_bundle_dir)
   Dir.chdir home_dir
 
-  plugins = YAML.load_file("#{dotfiles_dir}/vim_plugins.yml")["plugins"]
-  plugins.each_pair do |name, repo|
+  config["plugins"].each_pair do |name, repo|
     vim_plugin_dir = "#{dotfiles_bundle_dir}/#{name}"
     puts "Installing vim plugin: #{name}" 
     Open3.popen3("git clone #{repo} #{vim_plugin_dir}")
@@ -62,8 +61,7 @@ end
 
 desc "Update existing vim plugins"
 task :update_vim_plugins do
-  plugins = YAML.load_file("#{dotfiles_dir}/vim_plugins.yml")["plugins"]
-  plugins.each_pair do |name, repo|
+  config["plugins"].each_pair do |name, repo|
     Dir.chdir "#{vim_bundle_dir}/#{name}"
     puts "Updating #{repo}" 
     `git pull`
