@@ -63,4 +63,8 @@ alias start_redis='redis-server /usr/local/etc/redis.conf'
 alias be='bundle exec'
 alias m="mvim"
 
+gog() {
+  cd $(bundle show $1)
+}
+
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
