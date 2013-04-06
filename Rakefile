@@ -101,12 +101,12 @@ task :pair do
     puts "Switching to pairing config"
     FileUtils.touch(pairing_config)
     FileUtils.rm(normal_config) if File.exists?(normal_config)
-    FileUtils.cp(pair_vimrc_file, "#{vimrc_file}")
+    FileUtils.symlink pair_vimrc_file, "#{dotfiles_dir}/#{vimrc_file}", :force => true
   else
     puts "Switching to normal config"
     FileUtils.touch(normal_config)
     FileUtils.rm(pairing_config) if File.exists?(pairing_config)
-    FileUtils.cp(normal_vimrc_file, "#{vimrc_file}")
+    FileUtils.symlink normal_vimrc_file, "#{dotfiles_dir}/#{vimrc_file}", :force => true
   end
 end
 
