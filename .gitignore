@@ -2,3 +2,7 @@ oh-my-zsh
 vim/bundle
 vim/vim
 vim/.netrwhist
+.DS_Store
+vim/autoload
+.normal_config
+.pairing_config

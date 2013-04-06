@@ -11,6 +11,21 @@ dotfiles_dir = Dir.pwd
 private_dir = config["private_dir"]
 backup_dir = config["backup_dir"]
 vim_bundle_dir = "vim/bundle"
+vimrc_file = "vimrc"
+autoload_plugin_path = "#{dotfiles_dir}/vim/autoload"
+
+# pairing variables
+normal_vimrc_file = "#{vimrc_file}.normal"
+normal_config = ".normal_config"
+pair_vimrc_file = "#{vimrc_file}.pair"
+pairing_config = ".pairing_config"
+
+task :clean do
+  FileUtils.rm(normal_config) if File.exists?(normal_config)
+  FileUtils.rm(pairing_config) if File.exists?(pairing_config)
+  FileUtils.rm(vimrc_file) if File.exists?(vimrc_file)
+  FileUtils.rm_rf(autoload_plugin_path)
+end
 
 desc "Backup existing dotfiles"
 task :backup do
@@ -62,6 +77,10 @@ task :install_vim_plugins do
       puts "Failed to install vim plugin: #{name}" if wait_thr.value != 0
     end
   end
+
+  # Move pathogen
+  FileUtils.mkdir(autoload_plugin_path)
+  FileUtils.cp("#{dotfiles_bundle_dir}/autoload/pathogen.vim", "#{autoload_plugin_path}/pathogen.vim")
 end
 
 desc "Update existing vim plugins"
@@ -73,5 +92,23 @@ task :update_vim_plugins do
   end
 end
 
+desc "Switch to pairing configuration"
+task :pair do
+  Dir.chdir dotfiles_dir
+  FileUtils.rm("vimrc", :force => true)
+
+  if File.exists?(normal_config)
+    puts "Switching to pairing config"
+    FileUtils.touch(pairing_config)
+    FileUtils.rm(normal_config) if File.exists?(normal_config)
+    FileUtils.cp(pair_vimrc_file, "#{vimrc_file}")
+  else
+    puts "Switching to normal config"
+    FileUtils.touch(normal_config)
+    FileUtils.rm(pairing_config) if File.exists?(pairing_config)
+    FileUtils.cp(normal_vimrc_file, "#{vimrc_file}")
+  end
+end
+
 desc "Installs dotfiles"
-task :install => [:backup, :install_vim_plugins, :link_public, :link_private]
+task :install => [:clean, :backup, :install_vim_plugins, :link_public, :link_private, :pair]
