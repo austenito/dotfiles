@@ -72,11 +72,11 @@ set t_Co=256
 
 " highlight lines over 80 characters
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
-match OverLength /\%80v.\+/
+match OverLength /\%100v.\+/
 
 " show color column
 if exists('+colorcolumn')
-  set colorcolumn=80
+  set colorcolumn=100
 endif
 
 " --------------------------------------------------------------------------- "
