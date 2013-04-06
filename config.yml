@@ -33,3 +33,4 @@ plugins:
   ruby: git://github.com/vim-ruby/vim-ruby.git
   powerline: git@github.com:Lokaltog/vim-powerline.git
   ctrlp: git@github.com:kien/ctrlp.vim.git
+  scala: git@github.com:derekwyatt/vim-scala.git
