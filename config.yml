@@ -34,3 +34,5 @@ plugins:
   powerline: git@github.com:Lokaltog/vim-powerline.git
   ctrlp: git@github.com:kien/ctrlp.vim.git
   scala: git@github.com:derekwyatt/vim-scala.git
+  conque: git@github.com:rson/vim-conque.git
+  ruby_conque: git@github.com:skwp/vim-ruby-conque.git

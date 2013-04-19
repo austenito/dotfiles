@@ -241,3 +241,9 @@ set guifont=Menlo\ Regular\ for\ Powerline\:h14
 let g:Powerline_symbols = 'fancy'
 
 let g:fugitive_github_domains = ['https://github.com']
+
+" rspec
+nmap <silent> <Leader>rf :call RunRspecCurrentFileConque()<CR>
+nmap <silent> <Leader>rl :call RunRspecCurrentLineConque()<CR>
+nmap <silent> <Leader>rk :call RunRakeConque()<CR>
+nmap <silent> <Leader>rr :call RunLastConqueCommand()<CR>
