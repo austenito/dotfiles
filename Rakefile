@@ -66,6 +66,7 @@ task :install_vim_plugins do
   dotfiles_bundle_dir = "#{dotfiles_dir}/#{vim_bundle_dir}"
 
   puts "Deleting existing vim plugins"
+  FileUtils.remove_dir(autoload_plugin_path, :force => true)
   FileUtils.remove_dir(dotfiles_bundle_dir, :force => true)
   Dir.mkdir(dotfiles_bundle_dir)
   Dir.chdir home_dir
