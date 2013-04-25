@@ -22,7 +22,7 @@ plugins:
   delimit_mate: https://github.com/Raimondi/delimitMate.git
   nerdtree: https://github.com/scrooloose/nerdtree.git
   fugitive: https://github.com/tpope/vim-fugitive.git
-  ack: https://github.com/mileszs/ack.vim.git
+  ag: git@github.com:rking/ag.vim.git
   slim: git@github.com:slim-template/vim-slim.git
   coffee: https://github.com/kchmck/vim-coffee-script.git
   unimpaired: https://github.com/tpope/vim-unimpaired.git

@@ -141,8 +141,8 @@ map <C-H> <C-W>h
 map <S-H> gT
 map <S-L> gt
 
-" <Leader>f to start an Ack search
-map <Leader>f :Ack<space>
+" <Leader>f to start an Ag  search
+map <Leader>f :Ag<space>
 
 " <Leader>o to open bufExplorer
 let g:bufExplorerDefaultHelp=0
