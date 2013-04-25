@@ -45,7 +45,7 @@ export TERM="xterm-256color"
 # Git aliases
 alias glp="git log --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cr%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph --date-order"
 alias gs='git status'
-
+alias gsync="git pull upstream master && git push origin master"
 
 #tmux
 alias muxs='mux start'
