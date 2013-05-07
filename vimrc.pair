@@ -13,7 +13,7 @@ set nocompatible                " disable older vi compatibility
 set modeline                    " respect other
 set encoding=utf-8              " use utf-8 encoding 
 
-set number                      " set line numbers 
+set relativenumber                      " set line numbers 
 
 set ruler                       " show ruler 
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
@@ -247,3 +247,14 @@ nmap <silent> <Leader>rf :call RunRspecCurrentFileConque()<CR>
 nmap <silent> <Leader>rl :call RunRspecCurrentLineConque()<CR>
 nmap <silent> <Leader>rk :call RunRakeConque()<CR>
 nmap <silent> <Leader>rr :call RunLastConqueCommand()<CR>
+
+" relative line numbers
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <Leader>nt :call NumberToggle()<cr>
