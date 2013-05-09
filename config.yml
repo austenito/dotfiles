@@ -36,3 +36,4 @@ plugins:
   scala: git@github.com:derekwyatt/vim-scala.git
   conque: git@github.com:rson/vim-conque.git
   ruby_conque: git@github.com:skwp/vim-ruby-conque.git
+  scratch: git@github.com:duff/vim-scratch.git

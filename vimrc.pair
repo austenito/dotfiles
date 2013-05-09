@@ -258,3 +258,6 @@ function! NumberToggle()
 endfunc
 
 nnoremap <Leader>nt :call NumberToggle()<cr>
+
+" Scratch
+nmap <silent> <Leader>s :Scratch<CR>
