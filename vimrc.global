@@ -79,6 +79,10 @@ if exists('+colorcolumn')
   set colorcolumn=100
 endif
 
+" show end of line
+set list
+set listchars=tab:▸\ ,eol:¬
+
 " --------------------------------------------------------------------------- "
 " search
 " --------------------------------------------------------------------------- "
@@ -269,3 +273,4 @@ nmap <silent> <Leader>s :Scratch<CR>
 
 " Startify
 let g:startify_bookmarks = ['~/dotfiles/vimrc.global', '~/dotfiles/vimrc.normal', '~/dotfiles/vimrc.pair', '~/.merchant.api.yml']
+
