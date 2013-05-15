@@ -12,6 +12,9 @@
 
 ## Configuration
 
+* Set an ENV variable `DOTFILES_DIR` pointing to the directory where you cloned
+  this repo.
+
 Environment specific settings are found in `config.yml`.
 
 * `private_dir` - the directory containing files local to your system. For example, I include a `zshrc.private` 
