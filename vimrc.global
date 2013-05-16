@@ -151,7 +151,7 @@ map <C-H> <C-W>h
 map <S-H> gT
 map <S-L> gt
 
-map <C-R> <C-W>R
+map <C-M> <C-W>R
 
 " <Leader>f to start an Ag search
 map <Leader>f :Ag<space>
