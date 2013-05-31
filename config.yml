@@ -15,7 +15,7 @@ plugins:
   snipmate: https://github.com/msanders/snipmate.vim.git
   bufexplorer: https://github.com/corntrace/bufexplorer.git
   supertab: https://github.com/ervandew/supertab.git
-  supercomplete: https://github.com/vim-scripts/SearchComplete.git
+  #supercomplete: https://github.com/vim-scripts/SearchComplete.git
   nerdtree: https://github.com/scrooloose/nerdtree.git
   nerdcommenter: https://github.com/scrooloose/nerdcommenter.git
   markdown: https://github.com/nelstrom/vim-markdown-preview.git
@@ -38,3 +38,4 @@ plugins:
   ruby_conque: git@github.com:austenito/vim-ruby-conque.git
   scratch: git@github.com:duff/vim-scratch.git
   startify: git@github.com:mhinz/vim-startify.git
+  tabman: git@github.com:kien/tabman.vim.git

@@ -81,7 +81,7 @@ endif
 
 " show end of line
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=trail:·
 
 " --------------------------------------------------------------------------- "
 " search
@@ -274,3 +274,6 @@ nmap <silent> <Leader>s :Scratch<CR>
 " Startify
 let g:startify_bookmarks = ['~/dotfiles/vimrc.global', '~/dotfiles/vimrc.normal', '~/dotfiles/vimrc.pair', '~/.merchant.api.yml']
 
+" Jump to tabs
+:map <C-5> 5gt
+:imap <C-5> <C-O>5gt
