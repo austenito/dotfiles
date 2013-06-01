@@ -4,6 +4,7 @@ files:
   - zshrc
   - vimrc
   - vim
+  - tmux.conf
 private_files:
   - zshrc.private
 plugins:
