@@ -48,8 +48,9 @@ alias gs='git status'
 alias gsync="git pull upstream master && git push origin master"
 
 #tmux
-alias muxs='mux start'
-alias muxk='tmux kill-session -t'
+alias tmn='tmux new -s'
+alias tmk='tmux kill-session -t'
+alias tm="tmuxinator"
 
 alias fms='foreman start'
 alias rc='rails console'
@@ -62,7 +63,7 @@ alias rr='rake routes'
 alias start_redis='redis-server /usr/local/etc/redis.conf'
 alias be='bundle exec'
 alias m="mvim"
-alias tm="tmuxinator"
+alias v="vim"
 
 gog() {
   cd $(bundle show $1)
