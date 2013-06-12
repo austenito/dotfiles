@@ -33,6 +33,7 @@ set backupext=.bak              " append .bak to backup files
 set backupdir=$HOME/.vim_backups    " directory to store backup files 
 set directory=$HOME/.vim_swaps      " directory to store swap files 
 set autowrite                   " enable buffers to be saved on suspend
+set autoread
 
 cmap cwd lcd %:p:h              " change working directory to that of file
 
@@ -190,10 +191,10 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 " buffer resizing mappings (shift + arrow key)
-nnoremap <S-Up> <c-w>+
-noremap <S-Down> <c-w>-
-nnoremap <S-Left> <c-w><
-nnoremap <S-Right> <c-w>>
+nnoremap <S-k> <c-w>-
+noremap <S-j> <c-w>+
+nnoremap <S-h> <c-w><
+nnoremap <S-l> <c-w>>
 
 " insert blank lines without going into insert mode
   nmap go o<esc>
