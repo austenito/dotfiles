@@ -50,6 +50,7 @@ alias gsync="git pull upstream master && git push origin master"
 #tmux
 alias tmn='tmux new -s'
 alias tmk='tmux kill-session -t'
+alias tma='tmux attach -t'
 alias tm="tmuxinator"
 
 alias fms='foreman start'
