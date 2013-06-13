@@ -191,10 +191,10 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 " buffer resizing mappings (shift + arrow key)
-nnoremap <S-k> <c-w>-
-noremap <S-j> <c-w>+
-nnoremap <S-h> <c-w><
-nnoremap <S-l> <c-w>>
+nnoremap <S-Up> <c-w>-
+noremap <S-Down> <c-w>+
+nnoremap <S-Left> <c-w><
+nnoremap <S-Right> <c-w>>
 
 " insert blank lines without going into insert mode
   nmap go o<esc>
@@ -280,3 +280,11 @@ let g:startify_bookmarks = ['~/dotfiles/vimrc.global', '~/dotfiles/vimrc.normal'
 :imap <C-5> <C-O>5gt
 map z gt
 map ZZ gT
+
+if &term =~ '^screen'
+  " tmux will send xterm-style keys when its xterm-keys option is on
+  execute "set <xUp>=\e[1;*A"
+  execute "set <xDown>=\e[1;*B"
+  execute "set <xRight>=\e[1;*C"
+  execute "set <xLeft>=\e[1;*D"
+endif
