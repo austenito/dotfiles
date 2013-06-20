@@ -74,7 +74,6 @@ set t_Co=256
 " highlight lines over 80 characters
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
 match OverLength /\%100v.\+/
-
 " show color column
 if exists('+colorcolumn')
   set colorcolumn=100
@@ -83,6 +82,9 @@ endif
 " show end of line
 set list
 set listchars=trail:·
+
+" highlight line number
+highlight CursorLineNR ctermbg=28 ctermfg=white
 
 " --------------------------------------------------------------------------- "
 " search
