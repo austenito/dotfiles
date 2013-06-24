@@ -1,7 +1,7 @@
 "" Follow me on Twitter @ryankanno
 "" Follow me on Twitter @austenito
 " --------------------------------------------------------------------------- "
-" abbreviations
+
 " --------------------------------------------------------------------------- "
         
 iab _me Ryan Kanno <ryankanno@localkinegrinds.com>
@@ -85,6 +85,9 @@ set listchars=trail:·
 
 " highlight line number
 highlight CursorLineNR ctermbg=28 ctermfg=white
+
+" highlight active tab
+highlight TabLineSel ctermbg=28 ctermfg=White
 
 " --------------------------------------------------------------------------- "
 " search
