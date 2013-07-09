@@ -13,7 +13,6 @@ plugins:
   surround: git://github.com/tpope/vim-surround.git
   markdown: git://github.com/tpope/vim-markdown.git
   vim_rails: https://github.com/tpope/vim-rails.git
-  snipmate: https://github.com/msanders/snipmate.vim.git
   bufexplorer: https://github.com/corntrace/bufexplorer.git
   supertab: https://github.com/ervandew/supertab.git
   nerdtree: https://github.com/scrooloose/nerdtree.git
