@@ -35,6 +35,9 @@ set directory=$HOME/.vim_swaps      " directory to store swap files
 set autowrite                   " enable buffers to be saved on suspend
 set autoread
 
+" time out on mapping after 0.1 second, time out on key codes after 0.1 second
+set timeout timeoutlen=300 ttimeoutlen=300
+
 cmap cwd lcd %:p:h              " change working directory to that of file
 
 " --------------------------------------------------------------------------- "
@@ -293,3 +296,4 @@ if &term =~ '^screen'
   execute "set <xRight>=\e[1;*C"
   execute "set <xLeft>=\e[1;*D"
 endif
+
