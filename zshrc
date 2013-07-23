@@ -36,9 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/Users/austenito/.rvm/gems/ruby-1.9.3-p194@voucher_search_service/bin:/Users/austenito/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/austenito/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/austenito/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/PostgreSQL/9.1/bin:/usr/local/share/python
 
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
-fi
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export TERM="xterm-256color"
 
@@ -71,3 +69,8 @@ gog() {
 }
 
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
+
+# chruby settings
+chruby 1.9.3
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
