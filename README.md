@@ -28,8 +28,11 @@ file in my zshrc config to store private information.
 ```
 git clone git@github.com:austenito/dotfiles.git
 cd dotfiles
+export DOTFILES_DIR=<dir where you cloned dotfiles>
 rake install
 ```
+
+After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equivalent file.
 
 ## Tasks
 * `rake install` - This tasks creates a backup of your files in `~/dotfiles_bak`
