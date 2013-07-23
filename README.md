@@ -5,8 +5,7 @@
 
 # Requirements
 
-* Ruby 1.9
-* Rake `gem install rake`
+* Ruby 1.9+
 
 # Usage
 
