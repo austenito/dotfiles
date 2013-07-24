@@ -13,6 +13,7 @@ backup_dir = config["backup_dir"]
 vim_bundle_dir = "vim/bundle"
 vimrc_file = "vimrc"
 autoload_plugin_path = "#{dotfiles_dir}/vim/autoload"
+powerline_themes_dir = "#{home_dir}/.oh-my-zsh/themes"
 
 # pairing variables
 normal_vimrc_file = "#{vimrc_file}.normal"
@@ -48,6 +49,13 @@ task :link_public do
     puts "Creating symlink to #{file_name} in home directory."
     FileUtils.symlink "#{dotfiles_dir}/#{file}", file_name, :force => true
   end
+end
+
+task :link_powerline_theme do
+  Dir.chdir powerline_themes_dir
+  file_name = "powerline.zsh-theme"
+  puts "Creating symlink to #{file_name} in oh-my-zsh themes dir"
+  FileUtils.symlink "#{dotfiles_dir}/#{file_name}", file_name, :force => true
 end
 
 task :link_private do
@@ -112,4 +120,4 @@ task :pair do
 end
 
 desc "Installs dotfiles"
-task :install => [:clean, :backup, :install_vim_plugins, :link_public, :link_private, :pair]
+task :install => [:clean, :backup, :install_vim_plugins, :link_public, :link_private, :link_powerline_theme, :pair]
