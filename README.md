@@ -14,10 +14,19 @@
 
 # Usage
 
+## Installing
+
+1. `git clone git@github.com:austenito/dotfiles.git`
+2. Copy config.yml.sample to config.yml
+3. Edit the config.yml to include your environment settings
+4. `DOTFILES_DIR=<dir where you cloned dotfiles> rake install`
+
+After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equivalent file. This will allow you
+to update your vim plugins if you add new ones.
+
 ## Configuration
 
-* Set an ENV variable `DOTFILES_DIR` pointing to the directory where you cloned
-  this repo.
+* Set an ENV variable `DOTFILES_DIR` pointing to the directory where you cloned this repo.
 
 Environment specific settings are found in `config.yml`.
 
@@ -27,17 +36,6 @@ file in my zshrc config to store private information.
 * `files` - The dotfiles to copy
 * `private_files` - The private dotfiles to copy
 * `plugins` - The list of vim plugins
-
-## Installing
-
-```
-git clone git@github.com:austenito/dotfiles.git
-cd dotfiles
-export DOTFILES_DIR=<dir where you cloned dotfiles>
-rake install
-```
-
-After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equivalent file.
 
 ## Tasks
 * `rake install` - This tasks creates a backup of your files in `~/dotfiles_bak`
