@@ -8,3 +8,4 @@ vim/autoload
 .normal_config
 .pairing_config
 vimrc
+config.yml
