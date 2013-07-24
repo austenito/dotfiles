@@ -8,6 +8,8 @@
 * Ruby 1.9+
 * [Powerline patched fonts][1]
 * [Consolas patched font][2] - This is the for the pretty git branch font
+* [Zsh][3]
+* [oh-my-zsh][4]
 
 # Usage
 
@@ -50,3 +52,5 @@ After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equ
 
 [1]: https://github.com/Lokaltog/powerline-fonts
 [2]: https://github.com/eugeneching/consolas-powerline-vim/blob/master/CONSOLA-Powerline.ttf
+[3]: http://www.zsh.org/
+[4]: https://github.com/robbyrussell/oh-my-zsh
