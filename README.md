@@ -6,6 +6,8 @@
 # Requirements
 
 * Ruby 1.9+
+* [Powerline patched fonts][1]
+* [Consolas patched font][2] - This is the for the pretty git branch font
 
 # Usage
 
@@ -45,3 +47,6 @@ After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equ
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
 5. Create new Pull Request
+
+[1]: https://github.com/Lokaltog/powerline-fonts
+[2]: https://github.com/eugeneching/consolas-powerline-vim/blob/master/CONSOLA-Powerline.ttf
