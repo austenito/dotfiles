@@ -6,6 +6,7 @@
 # Requirements
 
 * Ruby 1.9+
+* [Powerline][5]
 * [Powerline patched fonts][1]
 * [Consolas patched font][2] - This is the for the pretty git branch font
 * [Zsh][3]
@@ -54,3 +55,4 @@ After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equ
 [2]: https://github.com/eugeneching/consolas-powerline-vim/blob/master/CONSOLA-Powerline.ttf
 [3]: http://www.zsh.org/
 [4]: https://github.com/robbyrussell/oh-my-zsh
+[5]: https://powerline.readthedocs.org/en/latest/installation/osx.html#installation-osx
