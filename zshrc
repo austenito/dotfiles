@@ -66,7 +66,11 @@ gog() {
   cd $(bundle show $1)
 }
 
+source /usr/local/share/chruby/auto.sh
 source /usr/local/share/chruby/chruby.sh
-chruby ruby-1.9.3
+chruby ruby-2.0.0-p195
 
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
