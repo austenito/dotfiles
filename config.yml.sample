@@ -1,5 +1,5 @@
-private_dir: /Users/austenito/repos/dotfiles_private
-backup_dir: /Users/austenito/dotfiles_backup
+private_dir: /Users/yourname/dotfiles_private
+backup_dir: /Users/yourname/dotfiles_backup
 files:
   - zshrc
   - vimrc

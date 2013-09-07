@@ -5,15 +5,28 @@
 
 # Requirements
 
-* Ruby 1.9
-* Rake `gem install rake`
+* Ruby 1.9+
+* [Powerline][5]
+* [Powerline patched fonts][1]
+* [Consolas patched font][2] - This is the for the pretty git branch font
+* [Zsh][3]
+* [oh-my-zsh][4]
 
 # Usage
 
+## Installing
+
+1. `git clone git@github.com:austenito/dotfiles.git`
+2. Copy config.yml.sample to config.yml
+3. Edit the config.yml to include your environment settings
+4. `DOTFILES_DIR=<dir where you cloned dotfiles> rake install`
+
+After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equivalent file. This will allow you
+to update your vim plugins if you add new ones.
+
 ## Configuration
 
-* Set an ENV variable `DOTFILES_DIR` pointing to the directory where you cloned
-  this repo.
+* Set an ENV variable `DOTFILES_DIR` pointing to the directory where you cloned this repo.
 
 Environment specific settings are found in `config.yml`.
 
@@ -23,14 +36,6 @@ file in my zshrc config to store private information.
 * `files` - The dotfiles to copy
 * `private_files` - The private dotfiles to copy
 * `plugins` - The list of vim plugins
-
-## Installing
-
-```
-git clone git@github.com:austenito/dotfiles.git
-cd dotfiles
-rake install
-```
 
 ## Tasks
 * `rake install` - This tasks creates a backup of your files in `~/dotfiles_bak`
@@ -43,3 +48,9 @@ rake install
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
 5. Create new Pull Request
+
+[1]: https://github.com/Lokaltog/powerline-fonts
+[2]: https://github.com/eugeneching/consolas-powerline-vim/blob/master/CONSOLA-Powerline.ttf
+[3]: http://www.zsh.org/
+[4]: https://github.com/robbyrussell/oh-my-zsh
+[5]: https://powerline.readthedocs.org/en/latest/installation/osx.html#installation-osx

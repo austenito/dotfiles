@@ -37,7 +37,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/Users/austenito/.rvm/gems/ruby-1.9.3-p194@voucher_search_service/bin:/Users/austenito/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/austenito/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/austenito/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/PostgreSQL/9.1/bin:/usr/local/share/python
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
 export TERM="xterm-256color"
 
 # Git aliases
@@ -68,9 +67,16 @@ gog() {
   cd $(bundle show $1)
 }
 
+source /usr/local/share/chruby/auto.sh
+source /usr/local/share/chruby/chruby.sh
+chruby ruby-2.0.0-p195
+
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
 
 # chruby settings
 chruby 1.9.3
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
