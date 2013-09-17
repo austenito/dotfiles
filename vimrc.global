@@ -286,8 +286,8 @@ let g:startify_bookmarks = ['~/dotfiles/vimrc.global', '~/dotfiles/vimrc.normal'
 " Jump to tabs
 :map <C-5> 5gt
 :imap <C-5> <C-O>5gt
-map z gt
-map ZZ gT
+map tt gt
+map TT gT
 
 if &term =~ '^screen'
   " tmux will send xterm-style keys when its xterm-keys option is on
