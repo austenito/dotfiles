@@ -228,6 +228,7 @@ nmap <silent> <C-n> :NERDTreeToggle<CR>
 
 map <Leader>t :CtrlP<CR>
 map <Leader>tr :CtrlPClearCache<CR>
+map <Leader>b :CtrlPBuffer<CR>
 
 " open browser after creating Gist
 let g:gist_open_browser_after_post = 1
