@@ -36,3 +36,4 @@ plugins:
   scratch: git@github.com:duff/vim-scratch.git
   startify: git@github.com:mhinz/vim-startify.git
   tabman: git@github.com:kien/tabman.vim.git
+  tabline: git@github.com:mkitt/tabline.vim.git

@@ -74,7 +74,7 @@ chruby ruby-2.0.0-p195
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
 
 # chruby settings
-chruby 2.0.0
+chruby ruby-2.0.0-p247
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
