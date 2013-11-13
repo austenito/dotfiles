@@ -37,3 +37,4 @@ plugins:
   startify: git@github.com:mhinz/vim-startify.git
   tabman: git@github.com:kien/tabman.vim.git
   tabline: git@github.com:mkitt/tabline.vim.git
+  yankring: git@github.com:vim-scripts/YankRing.vim.git
