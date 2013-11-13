@@ -223,7 +223,7 @@ nnoremap <S-Right> <c-w>>
   imap <C-l> <Space>=><Space>
   
 " Ctrl-n to open  Nerd Tree
-nmap <silent> <C-n> :NERDTreeToggle<CR>
+nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
 map <Leader>t :CtrlP<CR>
 map <Leader>tr :CtrlPClearCache<CR>
