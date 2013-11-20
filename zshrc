@@ -51,7 +51,7 @@ alias tma='tmux attach -t'
 alias tm="tmuxinator"
 
 alias fms='foreman start'
-alias rs ='rails server'
+alias rs='rails server'
 alias rc='rails console'
 alias hi='history'
 alias her="heroku"
