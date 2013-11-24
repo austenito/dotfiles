@@ -232,6 +232,9 @@ map <Leader>b :CtrlPBuffer<CR>
 " open browser after creating Gist
 let g:gist_open_browser_after_post = 1
 
+" private gists by default
+let g:gist_post_private = 1
+
 map { [e
 map } ]e
 
@@ -296,4 +299,3 @@ if &term =~ '^screen'
   execute "set <xRight>=\e[1;*C"
   execute "set <xLeft>=\e[1;*D"
 endif
-
