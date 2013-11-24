@@ -38,3 +38,4 @@ plugins:
   tabman: git@github.com:kien/tabman.vim.git
   tabline: git@github.com:mkitt/tabline.vim.git
   yankring: git@github.com:vim-scripts/YankRing.vim.git
+  webapi-vim: https://github.com/mattn/webapi-vim.git
