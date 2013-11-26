@@ -82,3 +82,6 @@ source /usr/local/share/chruby/auto.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PARALLEL_TEST_PROCESSORS=4
+
