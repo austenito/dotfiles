@@ -29,7 +29,7 @@ ZSH_THEME="powerline"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git tmux tmuxinator)
+plugins=(git tmux tmuxinator nyan rails3 zeus)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,11 +48,10 @@ alias gsync="git pull upstream master && git push origin master"
 alias tmn='tmux new -s'
 alias tmk='tmux kill-session -t'
 alias tma='tmux attach -t'
+alias tml='tmux list-sessions'
 alias tm="tmuxinator"
 
 alias fms='foreman start'
-alias rs='rails server'
-alias rc='rails console'
 alias hi='history'
 alias her="heroku"
 
@@ -69,16 +68,12 @@ gog() {
   cd $(bundle show $1)
 }
 
+# chruby settings
 source /usr/local/share/chruby/auto.sh
 source /usr/local/share/chruby/chruby.sh
 chruby ruby-2.0.0-p247
 
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
-
-# chruby settings
-chruby ruby-2.0.0-p247
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
