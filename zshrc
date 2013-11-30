@@ -76,7 +76,7 @@ chruby ruby-2.0.0-p247
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 export PARALLEL_TEST_PROCESSORS=4
 
