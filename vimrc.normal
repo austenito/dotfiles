@@ -1,4 +1,3 @@
-let mapleader=","               " set mapleader
 set cursorline                  " highlight current line
 
 "settings that cause tmux to explode

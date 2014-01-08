@@ -68,6 +68,8 @@ set wildmenu                    " show autocomplete options
 set textwidth=79                " sets the text width
 set hlsearch
 
+let mapleader=","               " set mapleader
+
 "settings that cause tmux to explode
 set t_Co=256
 "set lines=58                    " height
