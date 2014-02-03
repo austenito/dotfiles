@@ -92,6 +92,7 @@ highlight CursorLineNR ctermbg=28 ctermfg=white
 " highlight active tab
 highlight TabLineSel ctermbg=28 ctermfg=White
 
+
 " --------------------------------------------------------------------------- "
 " search
 " --------------------------------------------------------------------------- "
@@ -294,6 +295,9 @@ let g:startify_bookmarks = ['~/dotfiles/vimrc.global', '~/dotfiles/vimrc.normal'
 map tt gt
 map TT gT
 
+" Auto save when focus lost
+:au FocusLost * :wa
+
 if &term =~ '^screen'
   " tmux will send xterm-style keys when its xterm-keys option is on
   execute "set <xUp>=\e[1;*A"
@@ -301,3 +305,4 @@ if &term =~ '^screen'
   execute "set <xRight>=\e[1;*C"
   execute "set <xLeft>=\e[1;*D"
 endif
+

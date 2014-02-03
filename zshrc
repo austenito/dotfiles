@@ -60,7 +60,7 @@ alias jpp='python -mjson.tool'
 alias rr='rake routes'
 
 alias start_redis='redis-server /usr/local/etc/redis.conf'
-alias be='bundle exec'
+alias be='nocorrect bundle exec'
 alias m="mvim"
 alias v="vim"
 
@@ -78,4 +78,3 @@ source /usr/local/share/chruby/auto.sh
 export PATH="/usr/local/heroku/bin:/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 
 export PARALLEL_TEST_PROCESSORS=4
-
