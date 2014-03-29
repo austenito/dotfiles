@@ -1,0 +1,88 @@
+" --------------------------------------------------------------------------- "
+" general
+" --------------------------------------------------------------------------- "
+set clipboard=unnamed           " share clipboard with win
+set guifont=Monaco:h12
+set visualbell                " no error bells
+set wildmenu                    " show autocomplete options
+set wrap
+
+"settings that cause tmux to explode
+set t_Co=256
+
+" --------------------------------------------------------------------------- "
+" themes
+" --------------------------------------------------------------------------- "
+
+if has("syntax")
+    syntax on
+endif
+set background=dark             " sets the background color (I like it dark)
+"colorscheme desert             " <3 desert/molokai ftw.
+colorscheme molokai             " <3 colorscheme ftw.
+
+" show end of line
+set list
+set listchars=trail:·
+
+" highlight line number
+highlight CursorLineNR ctermbg=28 ctermfg=white
+
+" highlight active tab
+highlight TabLineSel ctermbg=28 ctermfg=White
+
+" buffer resizing mappings (shift + arrow key)
+nnoremap <S-Up> <c-w>-
+noremap <S-Down> <c-w>+
+nnoremap <S-Left> <c-w><
+nnoremap <S-Right> <c-w>>
+
+" insert blank lines without going into insert mode
+nmap go o<esc>
+nmap gO O<esc>
+
+" shortcuts for frequenly used files
+nmap gs :e db/schema.rb<cr>
+nmap gr :e config/routes.rb<cr>
+
+" relative line numbers
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set number
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <Leader>nt :call NumberToggle()<cr>
+call NumberToggle()
+
+" Regenerate ctags-exuberant
+map <Leader>ce :!/usr/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q *<CR>
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags' 
+
+" Open file in NERDTree
+nmap <leader>rr :NERDTreeFind<CR>
+
+" Scratch
+nmap <silent> <Leader>s :Scratch<CR>
+
+" map jk to Esc
+imap <silent> jk <Esc>
+
+" Control P
+map <D-N>       :CtrlPClearCache<CR>:CtrlP<CR>
+map <leader>F   :CtrlPClearCache<CR>:CtrlP<CR>
+nmap <C-p>      :CtrlP<CR>
+map <leader>f   :CtrlP<CR>
+map <leader>bb   :CtrlPBuffer<CR>
+
+" <Leader>a to start an Ag search
+map <Leader>a :Ag<space>
+
+" Jump to tabs
+:map <C-5> 5gt
+:imap <C-5> <C-O>5gt
+map tt gt
+map TT gT
