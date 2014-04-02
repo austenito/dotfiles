@@ -1,45 +1,23 @@
 # Inspiration
 
-* The symlinking idea was borrowed from https://github.com/michaeljsmalley/dotfiles
-* My vim configs are based on https://github.com/ryankanno/vim-config
+* vim.local is used with [Case Commons Vim Config](https://github.com/Casecommons/vim-config)
 
 # Requirements
 
-* Ruby 1.9+
 * [Powerline][5]
 * [Powerline patched fonts][1]
 * [Consolas patched font][2] - This is the for the pretty git branch font
 * [Zsh][3]
 * [oh-my-zsh][4]
 
-# Usage
-
 ## Installing
 
-1. `git clone git@github.com:austenito/dotfiles.git`
-2. Copy config.yml.sample to config.yml
-3. Edit the config.yml to include your environment settings
-4. `DOTFILES_DIR=<dir where you cloned dotfiles> rake install`
-
-After installation, you might want to add `DOTFILES_DIR` into your .zshrc or equivalent file. This will allow you
-to update your vim plugins if you add new ones.
-
-## Configuration
-
-* Set an ENV variable `DOTFILES_DIR` pointing to the directory where you cloned this repo.
-
-Environment specific settings are found in `config.yml`.
-
-* `private_dir` - the directory containing files local to your system. For example, I include a `zshrc.private` 
-file in my zshrc config to store private information. 
-* `backup_dir` - The directory where your existing dotfiles are stored.
-* `files` - The dotfiles to copy
-* `private_files` - The private dotfiles to copy
-* `plugins` - The list of vim plugins
-
-## Tasks
-* `rake install` - This tasks creates a backup of your files in `~/dotfiles_bak`
-* `rake update_vim_plugins` - Updates all vim plugins
+* Install zsh and oh-my-zsh
+* Symlink the `powerline.zsh-theme` to `~/.oh-my-zsh/themes`
+* Install power line fonts if necessary
+* Clone the Case Commons Vim Config to your home directory
+* Symlink `zshrc`, `vim.local`, and `tmux.conf` to your home directory with a preceding '.'
+* Profit
 
 # Contribution
 
