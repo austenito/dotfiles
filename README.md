@@ -16,7 +16,7 @@
 * Symlink the `powerline.zsh-theme` to `~/.oh-my-zsh/themes`
 * Install power line fonts if necessary
 * `ln -s dotfiles/vim .vim`
-* `ln -s dotfiles/vimrc ~/.vimrc`
+* `ln -s dotfiles/vim/vimrc ~/.vimrc`
 * `ln -s dotfiles/zshrc ~/.zshrc`
 * Profit
 
