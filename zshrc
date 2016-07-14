@@ -38,7 +38,11 @@ export EC2_HOME="/Users/austenito/lib/ec2-api-tools-1.6.12.2"
 export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
 
 # Customize to your needs...
+<<<<<<< HEAD
 export PATH=/Users/austenito/.rvm/gems/ruby-1.9.3-p194@voucher_search_service/bin:/Users/austenito/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/austenito/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/austenito/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/PostgreSQL/9.1/bin:/usr/local/share/python:$EC2_HOME/bin
+=======
+export PATH=/Users/austenito/.rvm/gems/ruby-1.9.3-p194@voucher_search_service/bin:/Users/austenito/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/austenito/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/austenito/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/PostgreSQL/9.1/bin:/usr/local/share/python:$EC2_HOME/bin:/usr/local/go/bin
+>>>>>>> 1b1d68c41c28a254f2ed54e01b7bd25d30811952
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 export TERM="xterm-256color"
@@ -84,3 +88,8 @@ export PATH="/usr/local/heroku/bin:/Applications/Postgres93.app/Contents/MacOS/b
 export PARALLEL_TEST_PROCESSORS=4
 
 export PATH=$HOME/bin:$PATH
+
+eval "$(hub alias -s)"
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+source zshrc.private

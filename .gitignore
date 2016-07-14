@@ -9,3 +9,5 @@ vim/autoload
 .pairing_config
 vimrc
 config.yml
+vim/plugins
+zshrc.private

@@ -15,9 +15,14 @@
 * Install zsh and oh-my-zsh
 * Symlink the `powerline.zsh-theme` to `~/.oh-my-zsh/themes`
 * Install power line fonts if necessary
-* Clone the Case Commons Vim Config to your home directory
-* Symlink `zshrc`, `vim.local`, and `tmux.conf` to your home directory with a preceding '.'
+* `ln -s dotfiles/vim .vim`
+* `ln -s dotfiles/vimrc ~/.vimrc`
+* `ln -s dotfiles/zshrc ~/.zshrc`
 * Profit
+
+I'm using [Dein](https://github.com/Shougo/dein.vim) as my vim package manager.
+To install plugins, in vim run `:call dein#update()`. See https://github.com/Shougo/dein.vim/blob/master/doc/dein.txt
+for more details
 
 # Contribution
 

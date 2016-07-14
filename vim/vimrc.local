@@ -1,0 +1,13 @@
+set clipboard=unnamed           " share clipboard with win
+
+" relative line numbers
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set number
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <Leader>nt :call NumberToggle()<cr>
