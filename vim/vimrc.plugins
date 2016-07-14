@@ -20,6 +20,8 @@ call dein#add('kien/ctrlp.vim')
 call dein#add('duff/vim-scratch')
 call dein#add('vim-scripts/ruby-matchit')
 call dein#add('fatih/vim-go')
+call dein#add('scrooloose/nerdcommenter')
+call dein#add('rking/ag.vim')
 
 call dein#end()
 
