@@ -18,6 +18,7 @@
 * `ln -s dotfiles/vim .vim`
 * `ln -s dotfiles/vim/vimrc ~/.vimrc`
 * `ln -s dotfiles/zshrc ~/.zshrc`
+* `ln -s dotfiles/zshrc.private .zshrc.private`
 * Profit
 
 I'm using [Dein](https://github.com/Shougo/dein.vim) as my vim package manager.

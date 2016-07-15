@@ -7,7 +7,6 @@ vim/autoload
 vim/autoload
 .normal_config
 .pairing_config
-vimrc
 config.yml
 vim/plugins
 zshrc.private

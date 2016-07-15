@@ -86,4 +86,4 @@ export PATH=$HOME/bin:$PATH
 eval "$(hub alias -s)"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-source zshrc.private
+source ~/.zshrc.private
