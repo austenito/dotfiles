@@ -22,6 +22,8 @@ call dein#add('vim-scripts/ruby-matchit')
 call dein#add('fatih/vim-go')
 call dein#add('scrooloose/nerdcommenter')
 call dein#add('rking/ag.vim')
+call dein#add('tpope/vim-endwise.git')
+call dein#add('vim-scripts/matchit.zip')
 
 call dein#end()
 
