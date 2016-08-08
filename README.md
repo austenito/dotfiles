@@ -19,6 +19,7 @@
 * `ln -s dotfiles/vim/vimrc ~/.vimrc`
 * `ln -s dotfiles/zshrc ~/.zshrc`
 * `ln -s dotfiles/zshrc.private .zshrc.private`
+* Install dein into ~/.vim/plugins
 * Profit
 
 I'm using [Dein](https://github.com/Shougo/dein.vim) as my vim package manager.
