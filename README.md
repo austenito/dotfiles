@@ -14,7 +14,7 @@
 
 * Install zsh and oh-my-zsh
 * Symlink the `powerline.zsh-theme` to `~/.oh-my-zsh/themes`
-* Install power line fonts if necessary
+* Follow powerline install instructions here: https://powerline.readthedocs.io/en/latest/installation/osx.html
 * `ln -s dotfiles/vim .vim`
 * `ln -s dotfiles/vim/vimrc ~/.vimrc`
 * `ln -s dotfiles/zshrc ~/.zshrc`
