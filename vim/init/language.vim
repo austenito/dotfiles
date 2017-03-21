@@ -26,3 +26,6 @@ autocmd FileType ruby imap  <Space>=><Space>
 autocmd FileType mkd normal zR
 
 autocmd FileType sql set filetype=sqlanywhere
+
+autocmd FileType go set nolist
+
