@@ -9,7 +9,7 @@ endif
 set list
 set listchars=trail:·
 
-set guifont=Monaco:h12
+set guifont=Inconsolata\ for\ Powerline:h15
 set visualbell                " no error bells
 set wildmenu                    " show autocomplete options
 set wrap
