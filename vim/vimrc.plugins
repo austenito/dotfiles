@@ -24,6 +24,7 @@ call dein#add('scrooloose/nerdcommenter')
 call dein#add('rking/ag.vim')
 call dein#add('tpope/vim-endwise.git')
 call dein#add('vim-scripts/matchit.zip')
+call dein#add('mustache/vim-mustache-handlebars')
 
 call dein#end()
 
