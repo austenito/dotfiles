@@ -11,6 +11,9 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-endwise.git'
 Plug 'vim-scripts/matchit.zip'
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 Plug 'pangloss/vim-javascript'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-haml'

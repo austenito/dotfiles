@@ -1,6 +1,8 @@
 set background=dark
 colorscheme molokai
 
+let g:airline_theme='powerlineish'
+
 if has("syntax")
   syntax on
 endif
