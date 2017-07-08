@@ -13,6 +13,7 @@ Plug 'vim-scripts/matchit.zip'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'powerline/powerline'
 
 Plug 'pangloss/vim-javascript'
 Plug 'mustache/vim-mustache-handlebars'
