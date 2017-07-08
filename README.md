@@ -15,16 +15,27 @@
 * Install zsh and oh-my-zsh
 * Symlink the `powerline.zsh-theme` to `~/.oh-my-zsh/themes`
 * Follow powerline install instructions here: https://powerline.readthedocs.io/en/latest/installation/osx.html
-* `ln -s dotfiles/vim .vim`
-* `ln -s dotfiles/vim/vimrc ~/.vimrc`
-* `ln -s dotfiles/zshrc ~/.zshrc`
-* `ln -s dotfiles/zshrc.private .zshrc.private`
-* Install dein into ~/.vim/plugins
-* Profit
 
-I'm using [Dein](https://github.com/Shougo/dein.vim) as my vim package manager.
-To install plugins, in vim run `:call dein#update()`. See https://github.com/Shougo/dein.vim/blob/master/doc/dein.txt
-for more details
+```
+ln -s dotfiles/vim .vim
+ln -s dotfiles/vim/vimrc ~/.vimrc
+ln -s dotfiles/zshrc ~/.zshrc
+ln -s dotfiles/zshrc.private .zshrc.private
+
+mkdir autoload
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+ cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer --gocode-completer --tern-completer
+```
+
+### Vim Setup
+
+* `:PlugInstall`
+* `:GoInstallBinaries` 
+
+* Profit
 
 # Contribution
 
