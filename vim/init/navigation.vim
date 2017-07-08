@@ -6,6 +6,7 @@ map th :bfirst<CR>
 map tj :bprev<CR>
 map tk :bnext<CR>
 map tl :blast<CR>
+map tt :bnext<CR>
 
 " buffer resizing mappings (shift + arrow key)
 nnoremap <S-Up> <c-w>-
