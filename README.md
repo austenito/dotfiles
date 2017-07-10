@@ -37,6 +37,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 * Profit
 
+### Ruby
+
+Install ctags for gems
+
+```
+gem install gem-ctags
+gem ctags
+```
+
 # Contribution
 
 1. Fork it
