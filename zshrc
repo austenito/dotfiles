@@ -66,6 +66,9 @@ alias be='nocorrect bundle exec'
 alias m="mvim"
 alias v="vim"
 
+# docker
+alias dc='docker-compose'
+
 gog() {
   cd $(bundle show $1)
 }

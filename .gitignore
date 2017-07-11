@@ -8,5 +8,6 @@ vim/autoload
 .normal_config
 .pairing_config
 config.yml
-vim/plugins
+vim/plugged
 zshrc.private
+vim/tags
