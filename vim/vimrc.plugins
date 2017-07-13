@@ -1,31 +1,39 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'DanielleSucher/nerdtree'
+" source control
 Plug 'tpope/vim-fugitive'
-Plug 'Lokaltog/vim-powerline'
-Plug 'ervandew/supertab'
+
+" navigation
+Plug 'DanielleSucher/nerdtree'
 Plug 'mileszs/ack.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'mtth/scratch.vim'
+Plug 'Valloric/YouCompleteMe'
+
+" editing
 Plug 'scrooloose/nerdcommenter'
-Plug 'vim-scripts/matchit.zip'
+Plug 'mtth/scratch.vim'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'powerline/powerline'
-
+" javascript
 Plug 'pangloss/vim-javascript'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-haml'
 
+" ruby/rails
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/ruby-matchit'
 Plug 'tpope/vim-bundler'
+Plug 'vim-scripts/matchit.zip'
 
-Plug 'Valloric/YouCompleteMe'
+" go
 Plug 'w0rp/ale'
 Plug 'fatih/vim-go'
+
+" display
+Plug 'Lokaltog/vim-powerline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'powerline/powerline'
 
 call plug#end()
 
