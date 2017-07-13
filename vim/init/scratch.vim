@@ -1,1 +1,1 @@
-nmap <silent> <Leader>s :Scratch<CR>
+let g:scratch_persistence_file = "/tmp/scratch"

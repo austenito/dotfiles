@@ -6,7 +6,7 @@ Plug 'Lokaltog/vim-powerline'
 Plug 'ervandew/supertab'
 Plug 'mileszs/ack.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'duff/vim-scratch'
+Plug 'mtth/scratch.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/matchit.zip'
 
