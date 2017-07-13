@@ -8,6 +8,7 @@ Plug 'DanielleSucher/nerdtree'
 Plug 'mileszs/ack.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
+Plug 'schickling/vim-bufonly'
 
 " editing
 Plug 'scrooloose/nerdcommenter'
@@ -34,6 +35,9 @@ Plug 'Lokaltog/vim-powerline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'powerline/powerline'
+
+" markdown
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 call plug#end()
 
