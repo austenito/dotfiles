@@ -46,6 +46,15 @@ gem install gem-ctags
 gem ctags
 ```
 
+### OSX Setup
+
+Key repeat rates:
+
+```
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+```
+
 # Contribution
 
 1. Fork it
