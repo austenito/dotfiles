@@ -6,9 +6,10 @@ Plug 'tpope/vim-fugitive'
 " navigation
 Plug 'DanielleSucher/nerdtree'
 Plug 'mileszs/ack.vim'
-Plug 'kien/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'schickling/vim-bufonly'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " editing
 Plug 'scrooloose/nerdcommenter'
