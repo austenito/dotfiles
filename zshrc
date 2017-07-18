@@ -65,3 +65,5 @@ eval "$(hub alias -s)"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 source ~/.zshrc.private
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
