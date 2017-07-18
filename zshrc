@@ -10,8 +10,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
 
-# Customize to your needs...
-
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 export TERM="xterm-256color"
 
@@ -56,8 +54,6 @@ source /usr/local/share/chruby/auto.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-export PARALLEL_TEST_PROCESSORS=4
 
 export PATH=$HOME/bin:$PATH
 
