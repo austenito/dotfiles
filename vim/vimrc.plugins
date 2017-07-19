@@ -13,7 +13,6 @@ Plug 'junegunn/fzf.vim'
 
 " editing
 Plug 'scrooloose/nerdcommenter'
-Plug 'mtth/scratch.vim'
 
 " javascript
 Plug 'pangloss/vim-javascript'

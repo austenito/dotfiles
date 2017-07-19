@@ -1,1 +1,1 @@
-let g:scratch_persistence_file = "/tmp/scratch"
+nmap gs :edit /tmp/scratch<CR>
