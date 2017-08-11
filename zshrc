@@ -41,6 +41,7 @@ alias v="vim"
 
 # docker
 alias dc='docker-compose'
+alias dm='docker-machine'
 
 gog() {
   cd $(bundle show $1)
