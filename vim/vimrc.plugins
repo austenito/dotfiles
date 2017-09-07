@@ -7,9 +7,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'DanielleSucher/nerdtree'
 Plug 'mileszs/ack.vim'
 Plug 'Valloric/YouCompleteMe'
-Plug 'jbranchaud/vim-bdubs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'qpkorr/vim-bufkill'
 
 " editing
 Plug 'scrooloose/nerdcommenter'
