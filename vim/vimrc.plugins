@@ -18,6 +18,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-haml'
+Plug 'moll/vim-node'
 
 " ruby/rails
 Plug 'tpope/vim-rails'
