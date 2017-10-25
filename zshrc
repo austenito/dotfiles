@@ -64,3 +64,5 @@ source $(brew --prefix nvm)/nvm.sh
 source ~/.zshrc.private
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_COMMAND='ag -a -l'
