@@ -10,6 +10,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'qpkorr/vim-bufkill'
+Plug 'majutsushi/tagbar'
 
 " editing
 Plug 'scrooloose/nerdcommenter'
