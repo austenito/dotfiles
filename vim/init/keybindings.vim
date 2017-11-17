@@ -44,3 +44,5 @@ nmap gO O<esc>
 
 " map jk to Esc
 imap <silent> jk <Esc>
+
+nnoremap <leader><leader> :up<cr>
