@@ -7,4 +7,3 @@ command NT NERDTree
 map \|          :NERDTreeFind<CR>
 
 let g:NERDTreeQuitOnOpen = 1
-let g:NERDTreeHighlightCursorline = 0

@@ -32,7 +32,7 @@ set splitright                  " Add new windows towards the right
 set splitbelow                  " ... and bottom
 set wildmode=list:longest       " Bash-like tab completion
 set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
-set nocursorline                  " Highlight current line
+set cursorline                  " Highlight current line
 
 set laststatus=2                " Always show statusline
 
