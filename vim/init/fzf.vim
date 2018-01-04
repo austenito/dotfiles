@@ -1,5 +1,5 @@
 map <leader>f   :FZF<CR>
-map <leader>b   :Buffers<CR>
+map <leader>bb   :Buffers<CR>
 map <leader>e   :History<CR>
 map <leader>h  :History/<CR>
 
