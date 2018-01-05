@@ -53,6 +53,9 @@ source /usr/local/share/chruby/auto.sh
 
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
 
+#fzf
+export FZF_DEFAULT_COMMAND='fd --type f'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
