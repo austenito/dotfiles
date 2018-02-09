@@ -18,6 +18,7 @@ alias glp="git log --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cr%C(reset
 alias gs='git status'
 alias gsync="git pull upstream master && git push origin master"
 alias gri='git rebase -i origin/master'
+alias gpu='git push -u origin head'
 
 #tmux
 alias tmn='tmux new -s'
