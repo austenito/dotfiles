@@ -68,3 +68,4 @@ source $(brew --prefix nvm)/nvm.sh
 source ~/.zshrc.private
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval $(docker-machine env)
