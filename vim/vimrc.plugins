@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " source control
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " navigation
 Plug 'DanielleSucher/nerdtree'
