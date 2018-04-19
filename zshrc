@@ -42,6 +42,7 @@ alias v="vim"
 
 # docker
 alias dc='docker-compose'
+alias dcf='docker-compose -f **/docker-compose.yml([1])'
 alias dm='docker-machine'
 
 gog() {
@@ -70,11 +71,9 @@ source ~/.zshrc.private
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval $(docker-machine env)
 
-alias refresh='source ~/.zshrc'
+elias refresh='source ~/.zshrc'
 
 function start_db {
-  DOCKER_PORT="${PORT:-$(docker-compose -f $1 port $2 3306 | awk -F: '{print $2}' 2>/dev/null)}"
-  mysql -hlocaldev.internal.digitalocean.com -P$DOCKER_PORT -uroot -psekret
+  DOCKER_PORT="${PORT:-$(docker-compose -f **/docker-compose.yml([1]) port $1 3306 | awk -F: '{print $2}' 2>/dev/null)}"
+  mysql -hlocaldev.internal.digitalocean.com -P$DOCKER_PORT -uroot -psekret -D$2
 }
-
-alias db='start_db'
