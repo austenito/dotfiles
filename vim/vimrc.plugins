@@ -7,11 +7,17 @@ Plug 'tpope/vim-rhubarb'
 " navigation
 Plug 'DanielleSucher/nerdtree'
 Plug 'mileszs/ack.vim'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
+
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'qpkorr/vim-bufkill'
 Plug 'majutsushi/tagbar'
+Plug 'bogado/file-line'
 
 " editing
 Plug 'scrooloose/nerdcommenter'
@@ -31,7 +37,7 @@ Plug 'vim-scripts/matchit.zip'
 
 " go
 Plug 'w0rp/ale'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " display
 Plug 'Lokaltog/vim-powerline'
