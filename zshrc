@@ -17,7 +17,7 @@ export TERM="xterm-256color"
 alias glp="git log --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cr%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph --date-order"
 alias gs='git status'
 alias gsync="git pull upstream master && git push origin master"
-alias gri='git rebase -i origin/master'
+alias gri='git rebase -i origin/master --autostash'
 alias gpu='git push -u origin head'
 
 #tmux
@@ -44,15 +44,10 @@ alias v="vim"
 alias dc='docker-compose'
 alias dcf='docker-compose -f **/docker-compose.yml([1])'
 alias dm='docker-machine'
-alias dstop="docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)"
 
 gog() {
   cd $(bundle show $1)
 }
-
-# chruby settings
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 
 [[ -r ~/.zshrc.private ]] && . ~/.zshrc.private
 
@@ -61,9 +56,11 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 
 export PATH=$HOME/bin:$PATH
 
-eval "$(hub alias -s)"
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+alias loadnvm='$(brew --prefix nvm)/nvm.sh'
+
+alias loadruby='source /usr/local/share/chruby/chruby.sh'
+
 source ~/.zshrc.private
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
