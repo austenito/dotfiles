@@ -64,7 +64,7 @@ alias loadruby='source /usr/local/share/chruby/chruby.sh'
 source ~/.zshrc.private
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias ev="eval $(docker-machine env)"
+alias ev='eval "$(docker-machine env)"'
 
 alias refresh='source ~/.zshrc'
 

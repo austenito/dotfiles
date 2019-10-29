@@ -55,7 +55,7 @@ if [ "$POWERLINE_DETECT_SSH" != "" ]; then
     POWERLINE_SEC1_TXT=%F{white}
   fi
 fi
-PROMPT="$POWERLINE_SEC1_BG$POWERLINE_SEC1_TXT %n %k%f$POWERLINE_SEC1_FG%K{053}"$'\u2b80'"%k%f%F{white}"
+PROMPT="$POWERLINE_SEC1_BG$POWERLINE_SEC1_TXT %n %k%f$POWERLINE_SEC1_FG%K{053}"$'\u2b80'"%k%f%F{white} "
 
 if [ "$POWERLINE_NO_BLANK_LINE" = "" ]; then
     PROMPT="
