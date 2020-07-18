@@ -1,9 +1,11 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="powerline"
+ZSH_THEME="dracula"
 
-plugins=(git nyan rails zeus)
+ZSH_DISABLE_COMPFIX=true
+
+plugins=(git rails zeus)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,3 +75,4 @@ function start_db {
   mysql -hlocaldev.internal.digitalocean.com -P$DOCKER_PORT -uroot -psekret -D$2
 }
 export PATH="/usr/local/opt/percona-server@5.6/bin:$PATH"
+source /Users/austenito/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

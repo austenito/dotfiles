@@ -9,9 +9,9 @@ Plug 'DanielleSucher/nerdtree'
 Plug 'mileszs/ack.vim'
 "Plug 'Valloric/YouCompleteMe'
 
-Plug 'Shougo/deoplete.nvim'
+"Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
+"Plug 'roxma/vim-hug-neovim-rpc'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

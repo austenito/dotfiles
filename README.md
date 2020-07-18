@@ -30,6 +30,17 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ./install.py --clang-completer --gocode-completer --tern-completer
 ```
 
+Syntax Highlighting
+
+```
+cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+
+Themes: https://github.com/dracula/dracula-theme
+
 ### Vim Setup
 
 * `:PlugInstall`
