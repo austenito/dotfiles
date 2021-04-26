@@ -1,5 +1,7 @@
 source ~/dotfiles/vim/init/settings.vim
 
+set commentary
+
 " ideavim
 let mapleader = ","
 
@@ -10,7 +12,6 @@ imap <silent> jk <Esc>
 nmap gd <Action>(GotoDeclaration)
 nmap gu <Action>(FindUsages)
 
-nmap cc <Action>(CommentByLineComment)
 nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fa <Action>(GotoAction)
 nmap <leader>fs <Action>(FileStructurePopup)
