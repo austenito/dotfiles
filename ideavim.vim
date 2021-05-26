@@ -9,7 +9,10 @@ let mapleader = ","
 imap <silent> jk <Esc>
 
 " jump on code
-nmap gd <Action>(GotoDeclaration)
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap <C-o> :action Back<CR>
+nnoremap <C-i> :action Forward<CR>
+
 nmap gu <Action>(FindUsages)
 
 nmap <leader>ff <Action>(GotoFile)
